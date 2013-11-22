@@ -1,0 +1,26 @@
+
+<div id="wrapper" class="container">
+	<div id="menu" class="container">
+		<ul>
+			<li ><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li ><a href="#/vms" accesskey="1" title="">Compute Engine</a></li>
+			<li class="current_page_item"><a href="#/volume" accesskey="2" title="">Datastore</a></li>
+			<li ><a href="#" accesskey="3" title="">About Us</a></li>
+			
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+
+	
+	
+</div>
+</div>
+<div id="page1" >
+	<h4><span>id</span><span>name</span><span>size</span><span>Virtual machine instance attached</span></h4>
+	<ul >
+		
+			<li   ng-repeat="volume in volumes"><span>{{volume.id}}</span><span>{{volume.name}}</span><span>{{volume.size}}</span><span ng-if="volume.vmid == -1">Not Attached</span><span ng-if="volume.vmid != -1">{{volume.vmid}}</span></li>	
+			
+			
+	</ul>
+</div>

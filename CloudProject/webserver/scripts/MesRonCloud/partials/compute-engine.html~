@@ -1,0 +1,67 @@
+
+<div id="wrapper" class="container">
+	<div id="menu" class="container">
+		<ul>
+			<li ><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li class="current_page_item"><a href="#/vms" accesskey="1" title="">Compute Engine</a></li>
+			<li><a href="#/volume" accesskey="2" title="">Datastore</a></li>
+			<li><a href="#" accesskey="3" title="">About Us</a></li>
+			
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+
+	
+	
+</div>
+<div id="three-column" class="container">
+		<div><span class="arrow-down"></span></div>
+		<div id="tbox1"> <span class="icon icon-wrench"></span>
+			<div class="title">
+				<h2>Create Virtual Machine</h2>
+			</div>
+			<p>Easy and Fast way to create Virtual machines.</p>
+			<a href="#/create" class="button">Learn More</a> </div>
+
+
+		<div id="tbox2"> <span class="icon icon-remove-circle"></span>
+			
+		<div class="title">
+				<h2>Destroy Virtual Machine Instance</h2>
+			</div>
+			<p>Destroy already created virtual machines.</p>
+			<a href="#/destroy" class="button">Learn More</a> </div>
+
+
+		<div id="tbox3"> <span class="icon icon-suitcase"></span>
+			<div class="title">
+
+				<h2>My Virtual machines</h2>
+			</div>
+			<p>See your virtual machines instances .</p>
+			<a href="#/manage" class="button">Learn More</a> </div>
+		<div id="tbox1"> <span class="icon icon-wrench"></span>
+			<div class="title">
+				<h2>Create Virtual Machine</h2>
+			</div>
+			<p>Easy and Fast way to create Virtual machines.</p>
+			<a href="#/create" class="button">Learn More</a> </div>
+
+
+		<div id="tbox2"> <span class="icon icon-remove-circle"></span>
+			
+		<div class="title">
+				<h2>Destroy Virtual Machine Instance</h2>
+			</div>
+			<p>Destroy already created virtual machines.</p>
+			<a href="#/destroy" class="button">Learn More</a> </div>
+
+
+		<div id="tbox3"> <span class="icon icon-suitcase"></span>
+			<div class="title">
+
+				<h2>My Virtual machines</h2>
+			</div>
+			<p>See your virtual machines instances .</p>
+			<a href="#/manage" class="button">Learn More</a> </div>
+	</div>

@@ -1,0 +1,22 @@
+
+<div id="wrapper" class="container">
+	<div id="menu" class="container">
+		<ul>
+			<li ><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li class="current_page_item"><a href="#/vms" accesskey="1" title="">Compute Engine</a></li>
+			<li><a href="#" accesskey="2" title="">Datastore</a></li>
+			<li><a href="#" accesskey="3" title="">About Us</a></li>
+			
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+
+	
+	
+</div>
+<div id="page1">
+	<h4><span>id</span><span>name</span><span>instance</span><span>description</span><span>Disk Attached</span></h4>
+	<ul >
+		<li ng-repeat="vm in vms"><span>{{vm.id}}</span><span>{{vm.name}}</span><span>{{vm.instance}}</span><span>{{vm.desc}}</span><span>{{vm.disk}}</span></li>	
+	</ul>
+</div>

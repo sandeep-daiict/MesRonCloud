@@ -1,0 +1,38 @@
+
+<div id="wrapper" class="container">
+	<div id="menu" class="container">
+		<ul>
+			<li ><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li class="current_page_item"><a href="#/vms" accesskey="1" title="">Compute Engine</a></li>
+			<li><a href="#" accesskey="2" title="">Datastore</a></li>
+			<li><a href="#" accesskey="3" title="">About Us</a></li>
+			
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+
+	
+	
+</div>
+ 
+<div id="page1" >
+	<div id="temp" >
+	<p > <br><br><font size="3" >Create virtual machine instance </font></p>
+		<!--<p>{{vms}}</p>-->
+	<form action="" method="post" name="vmcreate">
+	Name: <input id="name" type="text" name="name"  data-ng-model="vmachine.name"><br>
+
+	Description: <input id="desc" style="height:70px;" type="text" name="lastname" data-ng-model="vmachine.desc"><br>
+	VM-Type <select id="instance" name="instance_type">            
+		  <option  ng-repeat="vm in vms | filter:query | orderBy:orderProp" data-ng-model="vmachine.type" value={{vm.tid}}> cpu: {{vm.cpu}} ram: {{vm.ram}} disk: {{vm.disk}}</option>
+	 </select>
+	<br>
+	Image <select id="image" name="image_id">            
+		  <option ng-repeat="image in images | filter:query | orderBy:orderProp" data-ng-model="vmachine.image" value={{image.id}}> id: {{image.id}} name: {{image.name}}</option>
+	 </select>
+	<br>
+	<br>
+	<input type="submit" value="Create" data-ng-click="save(vmcreate)" onclick="CreatedCtrl()">
+	</form>
+	</div>
+</div>

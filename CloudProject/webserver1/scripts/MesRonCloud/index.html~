@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" ng-app='cloud'>
+<head>
+  
+  <meta charset="utf-8">
+  <title>MesRonCloud</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+ 	<script src="js/services.js"></script>
+<script src="lib/angular/angular-resource.js"></script>
+</head>
+
+<body >
+<h1>MesRonCloud</h1>
+  <p><img class="align-left" src="img/cloud-on-cloud.jpg" width="180" height="150" />
+	<strong>MesRonCloud </strong> is an infrastructure as a service that lets you run your large-scale computing workloads on Linux virtual machines hosted on <strong>MesRon's </strong> infrastructure.</p>
+	
+<div ng-view></div>
+  
+</body>
+</html>

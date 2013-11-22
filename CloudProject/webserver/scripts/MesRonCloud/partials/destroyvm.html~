@@ -1,0 +1,32 @@
+
+<div id="wrapper" class="container">
+	<div id="menu" class="container">
+		<ul>
+			<li ><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li class="current_page_item"><a href="#/vms" accesskey="1" title="">Compute Engine</a></li>
+			<li><a href="#" accesskey="2" title="">Datastore</a></li>
+			<li><a href="#" accesskey="3" title="">About Us</a></li>
+			
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+
+	
+	
+</div>
+<div id="page1">
+	<p > <br><br><font size="3" >Destroy virtual machine instance </font></p>
+	<form>
+	
+	Instances <select >            
+		  <option ng-repeat="vm in vms | filter:query | orderBy:orderProp" value={{vm.tid}}> cpu: {{vm.cpu}} ram: {{vm.ram}} disk: {{vm.disk}}</option>
+	 </select>
+	<br>
+	Image <select >            
+		  <option ng-repeat="vm in vms | filter:query | orderBy:orderProp" value={{vm.tid}}> cpu: {{vm.cpu}} ram: {{vm.ram}} disk: {{vm.disk}}</option>
+	 </select>
+	<br>
+	<br>
+	<input type="submit" value="Create">
+	</form>
+</div>

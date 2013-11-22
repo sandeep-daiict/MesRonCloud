@@ -1,0 +1,37 @@
+
+<div id="wrapper" class="container">
+	<div id="menu" class="container">
+		<ul>
+			<li ><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li ><a href="#/vms" accesskey="1" title="">Compute Engine</a></li>
+			<li class="current_page_item"><a  href="#/volume"  accesskey="2" title="">Datastore</a></li>
+			<li><a href="#" accesskey="3" title="">About Us</a></li>
+			
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+
+	
+	
+</div>
+<div id="page1" ng-init="sizes = [
+{name:'micro', size:1},
+{name:'small', size:2},
+{name:'medium', size:3 },
+{name:'big', size:5},
+{name:'big box', size:7},
+{name:'full', size:10}
+]">
+	<p > <br><br><font size="3" >Create Datastore </font></p>
+	<form method="post" name="volumecreate">
+	Name: <input type="text" name="firstname" id="name"><br>
+
+	
+	Size: <select id="size">            
+		  <option ng-repeat="s in sizes "  value={{s.size}} data-ng-model="vmachine.size"> name: {{s.name}} size: {{s.size}}G </option>
+	 </select>
+	<br>
+	<br>
+	<input type="submit" value="Create" onclick="volumecreated()" data-ng-click="save(volumecreate)">
+	</form>
+</div>

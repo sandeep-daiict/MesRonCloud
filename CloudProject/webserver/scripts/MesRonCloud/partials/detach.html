@@ -1,0 +1,30 @@
+
+<div id="wrapper" class="container">
+	<div id="menu" class="container">
+		<ul>
+			<li ><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li ><a href="#/vms" accesskey="1" title="">Compute Engine</a></li>
+			<li class="current_page_item"><a href="#/volume" accesskey="2" title="">Datastore</a></li>
+			<li><a href="#" accesskey="3" title="">About Us</a></li>
+			
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+	</div>
+
+	
+	
+</div>
+<div id="page1" name="volumedetach" method="post">
+	<p > <br><br><font size="3" >Detach Storage </font></p>
+	<form>
+	
+	Datastores: <select id="volume_destroy" name="volume_type">            
+		  <option  ng-repeat="volume in volumes | filter:query | orderBy:orderProp" data-ng-model="volume.typedestroy" class="class_{{volume.vmid}}" value={{volume.id}}> name : {{volume.name}} id : {{volume.id}} size : {{volume.size}} vmid : {{volume.vmid}}</option>
+	 </select>
+	<br>
+	<br>
+	
+	<br>
+	<input type="submit" value="Detach" data-ng-click="save(volumedetach)" onclick="volumeDetachCtrl()">
+	</form>
+</div>
